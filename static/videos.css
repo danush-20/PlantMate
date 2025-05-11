@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaf8e0; /* Light green background for the whole page */
+    color: #333; /* Dark text for good readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the page content horizontally */
+    align-items: center; /* Center the page content vertically */
+    height: 100vh; /* Make the body take full viewport height */
+}
+
+.container {
+    max-width: 900px;
+    padding: 20px;
+    background-color: #f4f9f4; /* Slightly greenish background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Allow container to use full width */
+    text-align: center; /* Center the text and elements inside */
+    margin-top: 30px; /* Adds some space from the top of the viewport */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #88b18f; /* Subtle green line */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #388e3c; /* Dark plant green color */
+    margin: 0;
+    text-align: center; /* Center the title */
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #4CAF50; /* Plant green color */
+    margin-top: 20px; /* Adds some space between the title and search */
+}
+
+/* Back Button Styles */
+.back-button {
+    background-color: #66bb6a; /* Lighter green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.back-button:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+}
+
+/* Video List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid with responsive columns */
+    gap: 20px; /* Equal space between each video item */
+    justify-content: center; /* Center the items in the grid */
+}
+
+.video-item {
+    background-color: #c8e6c9; /* Very light green background for video items */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-item strong {
+    display: block;
+    font-size: 1.2em;
+    color: #388e3c; /* Dark green for titles */
+    margin-bottom: 10px;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-item {
+        padding: 15px;
+    }
+}

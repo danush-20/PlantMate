@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('wallpaper_blurred.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 40%;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Upload Box */
+.upload-box {
+    background: #d8f3dc;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px dashed #2d6a4f;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.upload-box:hover {
+    background: #95d5b2;
+}
+
+/* File input */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: #2d6a4f;
+    cursor: pointer;
+}
+
+/* Image Preview */
+#preview {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button */
+button {
+    background: #40916c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b4332;
+}

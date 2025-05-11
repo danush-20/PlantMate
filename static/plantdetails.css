@@ -1,0 +1,74 @@
+body {
+    background: url('wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #a8e6cf;
+}
+
+.details-box,
+.wiki-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff8c42;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #ff5722;
+}
+.back-buttons {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .back-buttons:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .back-buttons:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+  }

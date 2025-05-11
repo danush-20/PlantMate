@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Details</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='plantdetails.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>{{ plant_name }}({{ details['Common Name']}})</h1>
+        <div class="details-box">
+            <p><strong>Scientific Name:</strong> {{ details["Scientific Name"] }}</p>
+            <p><strong>Kingdom:</strong> {{ details["Kingdom"] }}</p>
+            <p><strong>Phylum:</strong> {{ details["Phylum"] }}</p>
+            <p><strong>Class:</strong> {{ details["Class"] }}</p>
+            <p><strong>Order:</strong> {{ details["Order"] }}</p>
+            <p><strong>Family:</strong> {{ details["Family"] }}</p>
+            <p><strong>Genus:</strong> {{ details["Genus"] }}</p>
+            <p><strong>Common Name:</strong> {{ details["Common Name"] }}</p>
+            <p><strong>More Info:</strong> <a href="{{details['More Info']}}" target="_blank">GBIF
+                    Link</a></p>
+        </div>
+        <div class="wiki-box">
+            <h2>Wikipedia Information</h2>
+            <p>{{ wiki_details }}</p>
+        </div>
+        <button onclick="window.history.back()" class="back-buttons">Back</button>
+        <a href="{{url_for('index')}}" class="back-button">🔄 Identify Another Plant</a>
+    </div>
+</body>
+
+</html>

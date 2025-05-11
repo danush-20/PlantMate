@@ -1,0 +1,7 @@
+*.env
+*.jpg
+static/uploads
+test.py
+test2.py
+test3.py
+*.ini

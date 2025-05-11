@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantMate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">PlantMate</h1>
+        <p class="subtitle">Upload an image of a plant and let us identify it!</p>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="upload-box">
+                <label for="file-upload" class="custom-file-upload">
+                    📸 Click to Upload Image
+                </label>
+                <input type="file" id="file-upload" name="file" accept="image/*" required
+                    onchange="previewImage(event)">
+                <img id="preview" src="" alt="Image Preview" style="display: none;">
+            </div>
+            <button type="submit">🌱 Identify Plant</button>
+        </form>
+
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const preview = document.getElementById("preview");
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
